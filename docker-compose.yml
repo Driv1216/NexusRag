@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  nexusrag:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nexusrag-app
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - ENABLE_RERANKER_DOWNLOAD=${ENABLE_RERANKER_DOWNLOAD:-false}
+      - ENABLE_CLIP_DOWNLOAD=${ENABLE_CLIP_DOWNLOAD:-false}
+    volumes:
+      - ./data:/app/data
+      - ./uploads:/app/uploads
+      - ./chroma_db:/app/chroma_db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s

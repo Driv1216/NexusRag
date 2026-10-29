@@ -1,0 +1,35 @@
+# FastAPI Backend & Streaming
+fastapi
+uvicorn[standard]
+python-multipart
+sse-starlette
+python-dotenv
+httpx
+
+# Vector DB & Embeddings
+chromadb
+sentence-transformers
+rank-bm25
+torch
+transformers
+
+# Multi-Format Ingestion
+pypdf
+pymupdf
+python-docx
+python-pptx
+pandas
+openpyxl
+pdfplumber
+tabulate
+pillow
+reportlab
+
+# LLM & Agent Framework
+langchain
+langchain-community
+langchain-google-genai
+langchain-text-splitters
+
+# SQLite Conversation Memory
+aiosqlite

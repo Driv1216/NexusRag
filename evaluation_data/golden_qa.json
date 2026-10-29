@@ -1,0 +1,10 @@
+[
+  {
+    "question": "What is the primary topic discussed in the uploaded document?",
+    "ground_truth": "The document provides an in-depth analysis and technical benchmarks of the system."
+  },
+  {
+    "question": "What visual figures or charts are included in the document?",
+    "ground_truth": "The document includes visual architecture diagrams, charts, and performance plots."
+  }
+]

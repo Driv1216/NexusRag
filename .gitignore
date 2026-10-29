@@ -1,0 +1,60 @@
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Environment Variables & Secrets
+.env
+.env.local
+*.env
+
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Databases & Vector Stores
+chroma_db/
+vector_db/
+data/*.db
+*.sqlite3
+
+# Uploads & Media Assets (preserve directory structure via .gitkeep)
+uploads/*
+!uploads/.gitkeep
+!uploads/extracted_images/
+!uploads/audio_tracks/
+!uploads/video_frames/
+uploads/extracted_images/*
+!uploads/extracted_images/.gitkeep
+uploads/audio_tracks/*
+!uploads/audio_tracks/.gitkeep
+uploads/video_frames/*
+!uploads/video_frames/.gitkeep
+
+# Node & Frontend Build Artifacts
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.npm/
+
+# OS Specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
